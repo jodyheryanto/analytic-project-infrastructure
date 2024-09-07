@@ -27,6 +27,32 @@ This project automates the deployment and configuration of infrastructure using 
 ## Getting Started
 
 ## Project Structure
+```bash
+infrastructure-automation/
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── modules/
+│       └── module_name/
+│           ├── main.tf
+│           └── variables.tf
+├── ansible/
+│   ├── playbook.yml
+│   ├── inventory/
+│   │   └── hosts
+│   └── roles/
+│       └── role_name/
+│           ├── tasks/
+│           │   └── main.yml
+│           └── defaults/
+│               └── main.yml
+├── infrastructure-diagram/
+│   └── Analytic-Infrastructure.png
+├── scripts/
+│   └── setup.sh
+└── README.md
+```
 
 ## Infrastructure Diagram
 ![Infrastructure Diagram](https://github.com/jodyheryanto/analytic-project-infrastructure/blob/main/infrastructure-diagram/Analytic-Infrastructure.png)
@@ -35,7 +61,7 @@ This project automates the deployment and configuration of infrastructure using 
 
 - [Terraform](https://www.terraform.io/downloads) (v1.x or later)
 - [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) (v2.x or later)
-- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) (if using AWS)
+- [Visual Studio Code](https://code.visualstudio.com/download)
 - [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 ### Installation
